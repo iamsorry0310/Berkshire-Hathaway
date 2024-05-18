@@ -32,13 +32,94 @@
             <img src="images/homepage/logo.png" alt="Berkshire Hathaway Logo" style="border-radius: 50%;">
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <hr>
+    <div class="document-container" style="height: 100%;">
+        <div class="document-list">
+            <details>
+                <summary>
+                    Berkshire Hathaway Diversity
+                </summary>
+                <ul>
+                    <li><a href="#" onclick="viewPDF('sustanibility/berkshire2022eeo1.pdf')">2022 - Berkshire Hathaway
+                            Diversity</a></li>
+                    <li><a href="#" onclick="viewPDF('sustanibility/berkshire2021eeo1.pdf')">2021 - Berkshire Hathaway
+                            Diversity</a>
+                    </li>
+            </details>
+
+            <details>
+                <summary>Prohibited Business Practices Policy</summary>
+                <ul>
+                    <li><a href="#" onclick="viewPDF('sustanibility/brksustainabilityleadershipcouncilmay2021.pdf')">
+                            Berkshire Hathaway Sustainability Leadership Council
+                        </a></li>
+                    <li><a href="#" onclick="viewPDF('corparate/pbpp-hindi.pdf')">Prohibited Business Practices Policy
+                        </a></li>
+                    <li><a href="#" onclick="viewPDF('sustanibility/2022_Sustainability_Report_FINAL_COM.pdf')">
+                            Shaw Industries
+                        </a></li>
+                </ul>
+            </details>
+            </li>
+            </ul>
+            <div class="center-content">
+
+            </div>
+        </div>
+        <div class="pdf-viewer">
+            <iframe id="pdf-viewer" class="pdf" src="" width="1000" height="800"></iframe>
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <div class="center-content">
+        <ol>
+            <li><a href="https://brick.com/sustainability">Acme Brick
+                </a></li><hr>
+            <li><a href="https://www.benjaminmoore.com/en-us/corporate-responsibility-sustainability">Benjamin Moore &
+                    Co.
+                </a></li><hr>
+            <li><a href="https://www.brkenergy.com/esg-sustainability/governance">Berkshire Hathaway Energy Company
+                </a></li><hr>
+            <li><a href="https://www.bnsf.com/in-the-community/environment/index.page">BNSF
+                </a></li><hr>
+            <li><a href="https://www.brooksrunning.com/en_us/meet-brooks/running-transparency/">Brooks</a></li><hr>
+            <li><a href="https://www.claytonhomes.com/sustainability">Clayton</a></li><hr>
+            <li><a href="https://www.cort.com/sustainability">CORT Business Services</a></li><hr>
+            <li><a href="https://www.fotlinc.com/Sustainability/">Fruit of the Loom Companies</a></li><hr>
+            <li><a href="https://www.garanimals.com/our-story/sustainability">Garan Incorporated</a></li><hr>
+            <li><a href="https://www.geico.com/about/in-the-community/"></a>GEICO Auto Insurance</li><hr>
+            <li><a href="https://www.genre.com/us/aboutus/esg"></a>General Re</li><hr>
+            <li><a href="https://jobs.helzberg.com/about-us/corporate-responsibility/"></a>Helzberg Diamonds</li><hr>
+            <li><a href="https://www.imc-companies.com/index.php/imc-sustainability-hp/"></a>IMC International
+                Metalworking Companies</li><hr>
+            <li><a href="https://www.jm.com/en/sustainability/"></a>Johns Manville</li><hr>
+            <li><a href="https://lubrizol.com/Our-Company/Corporate-Report"></a>Lubrizol Corporation</li><hr>
+            <li><a href="https://www.marmon.com/esg-responsibility-statement/"></a>Marmon Holdings, Inc.</li><hr>
+            <li><a href="https://www.mclaneco.com/about/community/"></a>McLane Company</li><hr>
+            <li><a href="https://www.netjets.com/en-us/sustainability"></a>NetJets®</li><hr>
+            <li><a href="https://www.richlinegroup.com/richline-responsible/"></a>Richline Group</li><hr>
+
+        </ol>
+    </div>
+    <script>
+        function viewPDF(url) {
+            console.log(`Attempting to view PDF: ${url}`);
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfViewer.src = url;
+        }
+    </script>
+
+
+
 </body>
 
 </html>

@@ -268,3 +268,47 @@ ul {
     text-align: center;
     margin: 20px;
 }
+
+.document-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.document-list {
+    width: 30%;
+    padding: 10px;
+}
+
+.pdf-viewer {
+    width: 500;
+    padding: 20px;
+    height: 800px;
+}
+
+.document-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.document-list a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.document-list a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.section-report{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    font-size: 30px;
+}

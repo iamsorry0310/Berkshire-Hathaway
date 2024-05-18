@@ -32,13 +32,42 @@
             <img src="images/homepage/logo.png" alt="Berkshire Hathaway Logo" style="border-radius: 50%;">
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="document-container" style="height: 100%;">
+        <div class="document-list">
+                <ul>
+                    <li><a href="#" onclick="viewPDF('annualmetting/visguide2024.pdf')">2024 Shareholder Meeting Information</a></li>
+                    <li><a href="#" onclick="viewPDF('annualmetting/2024proxystmt.pdf')">
+                        2024 Proxy Statement
+                        </a></li>
+                    <li>The 2024 Annual Meeting will be on May 4, 2024</li>
+                </ul>
+            </details>
+            </li>
+            </ul>
+            <div class="center-content">
+            </div>
+        </div>
+        <div class="pdf-viewer">
+            <iframe id="pdf-viewer" class="pdf" src="" width="1000" height="800"></iframe>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <script>
+        function viewPDF(url) {
+            console.log(`Attempting to view PDF: ${url}`);
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfViewer.src = url;
+        }
+    </script>
 </body>
 
 </html>

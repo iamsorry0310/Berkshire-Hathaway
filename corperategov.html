@@ -32,13 +32,55 @@
             <img src="images/homepage/logo.png" alt="Berkshire Hathaway Logo" style="border-radius: 50%;">
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <div class="document-container">
+        <div class="document-list">
+            <ul>
+                <li><a href="#" onclick="viewPDF('corparate/corpgov.pdf')">Corporate Governance Guidelines</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/ethics.pdf')">Code of Business Conduct and Ethics</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/inside.pdf')">Insider Trading Policy</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/audit.pdf')">Audit Committee Charter</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/comp.pdf')">Governance, Compensation and Nominating Committee Charter</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/comp.pdf')">Corporate Governance Guidelines</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/cmp.pdf')">Conflict Minerals Policy Statement</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/cmpr.pdf')">Conflict Minerals Report</a></li>
+                <li><a href="#" onclick="viewPDF('corparate/wfc.pdf')">Wesco Financial Corp - Form 8937 Report on Basis of Securities</a></li>
+                <li><a href="https://www.sec.gov/edgar/browse/?CIK=1067983&owner=only">Section 16 Reports of Directors, Officers and Principal Stockholders</a></li>
+                <li>
+                    <details>
+                        <summary>Prohibited Business Practices Policy</summary>
+                        <ul>
+                            <li><a href="#" onclick="viewPDF('corparate/prohibitedbusinesspracticespolicyhindi.pdf')">Prohibited Business Practices Policy (English)</a></li>
+                            <li><a href="#" onclick="viewPDF('corparate/pbpp-french.pdf')">Prohibited Business Practices Policy (French)</a></li>
+                            <li><a href="#" onclick="viewPDF('corparate/pbpp-german.pdf')">Prohibited Business Practices Policy (German)</a></li>
+                            <li><a href="#" onclick="viewPDF('corparate/pbpp-spanish.pdf')">Prohibited Business Practices Policy (Spanish)</a></li>
+                            <li><a href="#" onclick="viewPDF('corparate/pbpp-chines.pdf')">Prohibited Business Practices Policy (Chinese)</a></li>
+                            <li><a href="#" onclick="viewPDF('corparate/pbpp-hindi.pdf')">Prohibited Business Practices Policy (Hindi)</a></li>
+                        </ul>
+                    </details>
+                </li>
+
+            </ul>
+        </div>
+        <div class="pdf-viewer">
+            <iframe id="pdf-viewer" class="pdf" src="" width="1000" height="800"></iframe>
+        </div>
+    </div>
+    </div>
+    <script>
+        function viewPDF(url) {
+            console.log(`Attempting to view PDF: ${url}`);
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfViewer.src = url;
+        }
+    </script>
 </body>
 
+</script>
 </html>

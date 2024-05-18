@@ -39,6 +39,34 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="document-container" style="height: 100%;">
+        <div class="document-list">
+                <ul>
+                    <li><a href="#" onclick="viewPDF('investorpresent/BHE2022InvestPresent.pdf')">2022 Berkshire Hathaway Energy Investor Presentation</a></li>
+                    <li><a href="#" onclick="viewPDF('investorpresent/BHE2021InvestPresent.pdf')">
+                        2021 Berkshire Hathaway Energy Investor Presentation
+                        </a></li>
+                </ul>
+            </details>
+            </li>
+            </ul>
+            <div class="center-content">
+            </div>
+        </div>
+        <div class="pdf-viewer">
+            <iframe id="pdf-viewer" class="pdf" src="" width="1000" height="800"></iframe>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <script>
+        function viewPDF(url) {
+            console.log(`Attempting to view PDF: ${url}`);
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfViewer.src = url;
+        }
+    </script>
 </body>
 
 </html>
