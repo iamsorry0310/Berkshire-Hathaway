@@ -39,6 +39,43 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <hr>
+    <div class="title" style="text-align: center;"><h1>Common Stock Information</h1></div>
+    <hr>
+
+    <div class="document-container" style="height: 100%;">
+        <div class="document-list">
+                <ul>
+                    <li><a href="#" onclick="viewPDF('letters/jun2321 (1).pdf')">Comments by Warren E. Buffett in conjunction with his annual contribution of Berkshire Hathaway shares to five foundations - June 23, 2021</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/bmgfltr.pdf')">Bill and Melinda Gates Foundation</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/stbfltr.pdf')">Susan Thompson Buffett Foundation</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/hgbltr.pdf')">Howard G. Buffett Foundation</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/sabltr.pdf')">The Sherwood Foundation (formerly Susan A. Buffett Foundation)</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/pabltr.pdf')">NoVo Foundation (Peter A. Buffett)</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/shpltr.pdf')">Letter to Susie, Howard & Peter Buffett</a></li>
+                    <li><a href="#" onclick="viewPDF('letters/fortune071006.pdf')">The July 10, 2006 edition of Fortune Magazine contains an article that includes additional information regarding the pledges made by Mr. Buffett.</a></li>
+                </ul>
+            </details>
+            </li>
+            </ul>
+            <div class="center-content">
+            </div>
+        </div>
+        <div class="pdf-viewer">
+            <iframe id="pdf-viewer" class="pdf" src="" width="1000" height="800"></iframe>
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <script>
+        function viewPDF(url) {
+            console.log(`Attempting to view PDF: ${url}`);
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfViewer.src = url;
+        }
+        </script>
+    
 </body>
 
 </html>

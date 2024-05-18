@@ -32,13 +32,46 @@
             <img src="images/homepage/logo.png" alt="Berkshire Hathaway Logo" style="border-radius: 50%;">
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <hr>
+    <div class="title" style="text-align: center;"><h1>Common Stock Information</h1></div>
+    <hr>
+
+    <div class="document-container" style="height: 100%;">
+        <div class="document-list">
+                <ul>
+                    <li><a href="#" onclick="viewPDF('stocks/compab.pdf')">Comparative Rights and Relative Prices of Class A and B Stock</a></li>
+                    <li><a href="#" onclick="viewPDF('stocks/activisionltr.pdf')">Facts Regarding Berkshire's 2021 Investments in Activision Common Stock</a></li>
+                    <li><a href="#" onclick="viewPDF('stocks/transferagentinfo.pdf')">
+                        Common stock and stock transfer agent information
+                        </a></li>
+                </ul>
+            </details>
+            </li>
+            </ul>
+            <div class="center-content">
+            </div>
+        </div>
+        <div class="pdf-viewer">
+            <iframe id="pdf-viewer" class="pdf" src="" width="1000" height="800"></iframe>
+        </div>
+    </div>
+    </div>
+    <hr>
+
+    <script>
+        function viewPDF(url) {
+            console.log(`Attempting to view PDF: ${url}`);
+            const pdfViewer = document.getElementById('pdf-viewer');
+            pdfViewer.src = url;
+        }
+    </script>
 </body>
 
 </html>

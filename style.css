@@ -312,3 +312,65 @@ ul {
     height: 500px;
     font-size: 30px;
 }
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.tabcontent h3 {
+    margin-top: 0;
+}
+
+.tabcontent {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: auto;
+}
+
+.tabcontent::-webkit-scrollbar {
+    width: 10px;
+}
+
+.tabcontent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.tabcontent::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.tabcontent::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
